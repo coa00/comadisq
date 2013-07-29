@@ -4,6 +4,8 @@
 #include "ofxNI2.h"
 #include "ofxNiTE2.h"
 #include "OpenNI.h"
+#include "ofxSyphon.h"
+#include "ofxOsc.h"
 
 class comaDisco : public ofBaseApp{
 
@@ -27,4 +29,7 @@ class comaDisco : public ofBaseApp{
         ofxNiTE2::UserTracker tracker;
         ofImage depth_image;
         ofEasyCam cam;
+    
+    ofxSyphonServer myServer;
+
 };

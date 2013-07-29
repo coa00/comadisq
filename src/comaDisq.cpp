@@ -2,6 +2,9 @@
 
 //--------------------------------------------------------------
 void comaDisco::setup(){
+    
+    myServer.setName("COMADEPTH");
+    
     ofSetFrameRate(60);
 	ofSetVerticalSync(true);
     glEnable(GL_DEPTH_TEST);
@@ -35,7 +38,8 @@ void comaDisco::update(){
 //--------------------------------------------------------------
 void comaDisco::draw(){
 	// draw depth
-	depth_image.setFromPixels(tracker.getPixelsRef(1000, 4000));
+	depth_image.setFromPixels( tracker.getPixelsRef(1000, 4000) );
+    myServer.publishTexture( &depth_image.getTextureReference() );
 	
 	ofSetColor(255);
 	depth_image.draw(300, 400,depth_image.getWidth(), depth_image.getHeight());

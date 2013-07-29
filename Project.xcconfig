@@ -7,3 +7,5 @@ OF_PATH = ../../..
 
 OTHER_LDFLAGS = $(OF_CORE_LIBS) 
 HEADER_SEARCH_PATHS = $(OF_CORE_HEADERS) "../../../addons/ofxOpenCv/libs/opencv/include/" "../../../addons/ofxCv/libs/ofxCv/include/"
+
+OFX_OSC_HEADERS = "$(OF_PATH)/addons/ofxOSC/libs" "$(OF_PATH)/addons/ofxOsc/libs/oscpack" "$(OF_PATH)/addons/ofxOsc/libs/oscpack/src" "$(OF_PATH)/addons/ofxOsc/libs/oscpack/src/ip" "$(OF_PATH)/addons/ofxOsc/libs/oscpack/src/ip/win32" "$(OF_PATH)/addons/ofxOsc/libs/oscpack/src/ip/posix" "$(OF_PATH)/addons/ofxOsc/src"
