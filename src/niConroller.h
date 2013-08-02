@@ -36,9 +36,11 @@ public:
     
     ofxNI2::Device device;
     ofxNI2::IrStream ir;
+    ofxNiTE2::User user;
     ofxNiTE2::UserTracker tracker;
     ofImage depth_image;
     ofEasyCam cam;
+    vector<ofxNiTE2::User::Ref> users_arr;
     
     ofxSyphonServer myServer;
     
