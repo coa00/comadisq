@@ -115,7 +115,7 @@ void niController::draw(){
         if (user->isNew()){
             status = "new";
         }else if(user->isVisible()){
-            status = "Visible";
+            status = "visible";
         }else if(user->isLost()){
             status = "lost";
         }
@@ -141,8 +141,7 @@ void niController::draw(){
 
 void::niController::headOscSet(string status,int userId){
     m.clear();
-	m.setAddress("/comadisq/joint/");
-    m.addStringArg(status);
+	m.setAddress("/comadisq/joint/"+status+"/");
     m.addInt64Arg(userId);
 }
 
