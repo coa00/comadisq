@@ -23,7 +23,8 @@ public:
     void update();
     void draw();
     void exit();
-    
+    void headOscSet(string status,int userId);
+    void jointOscSet(ofVec3f pos);
     void keyPressed  (int key);
     void keyReleased(int key);
     void mouseMoved(int x, int y );
@@ -38,11 +39,15 @@ public:
     ofxNI2::IrStream ir;
     ofxNiTE2::User user;
     ofxNiTE2::UserTracker tracker;
+    ofxOscMessage m;
+    ofxOscSender sender;
     ofImage depth_image;
     ofEasyCam cam;
     vector<ofxNiTE2::User::Ref> users_arr;
     
     ofxSyphonServer myServer;
+    const string HOST = "localhost";
+    const int PORT =12000;
     
 };
 

@@ -12,12 +12,12 @@
 void niController::setup(){
     nite::Status niteRet = nite::NiTE::initialize();
     myServer.setName("COMADEPTH");
-    
+    sender.setup(HOST,PORT);
     ofSetFrameRate(60);
 	ofSetVerticalSync(true);
     glEnable(GL_DEPTH_TEST);
 	ofBackground(0);
-    try {
+
         device.setup();
         device.setDepthColorSyncEnabled();
         
@@ -32,11 +32,6 @@ void niController::setup(){
         {
             cout << "tracker inited" << endl;
         }
-        throw "device not found";
-    } catch (const char* str) {
-        cout << str << endl;
-    }
-
 }
 
 void niController::exit(){
@@ -48,27 +43,25 @@ void niController::exit(){
 void niController::update(){
     device.update();
     //ユーザごとのpoint取得　現状0,0,0しか帰ってこない。
-	for (int i = 0; i < tracker.getNumUser(); i++){
-		ofxNiTE2::User::Ref user = tracker.getUser(i);
-        user->draw();
-        size_t cntJoint = user->getNumJoints();
+//	for (int i = 0; i < tracker.getNumUser(); i++){
+//		ofxNiTE2::User::Ref user = tracker.getUser(i);
+//        user->draw();
+//        size_t cntJoint = user->getNumJoints();
+    
         
-        ofxNiTE2::Joint joint;
        
-//        const vector<ofxNiTE2::Joint> joints;
-        for (int j = 0; j<cntJoint; j++) {
-            joint = user->getJoint(cntJoint);
-            nite::SkeletonJoint skJoint = joint.get();
-            nite::Point3f skPoint = skJoint.getPosition();
-            ofVec3f points = joint.getPosition();
+
+//        for (int j = 1; j<cntJoint; j++) {
+//            const ofxNiTE2::Joint &joint = user->getJoint(j);
+//            ofVec3f points = joint.getGlobalPosition();
 //            cout << points << "/" << &skPoint << endl;
-            cout << joint.getGlobalPosition() << endl;
+//            cout << joint.getGlobalPosition() << endl;
 //            ofNode parent = *joint.getParent();
 //            ofVec3f pos = parent.getPosition();
 //            cout << pos << endl;
 
-        }
-	}
+//        }
+//	}
 }
 
 //--------------------------------------------------------------
@@ -76,54 +69,71 @@ void niController::draw(){
 	// draw depth
 	depth_image.setFromPixels( tracker.getPixelsRef(100, 1000) );
     myServer.publishTexture( &depth_image.getTextureReference() );
-    
-    //depthイメージを全面表示
-//	depth_image.getTextureReference().bind();
-//    glBegin(GL_POINT);
-//    glTexCoord2f(10,0), glVertex2d(0, 0);
-//    glTexCoord2f(ofGetWidth(),0), glVertex2d(ofGetWidth(), 0);
-//    glTexCoord2f(ofGetWidth(),ofGetHeight()), glVertex2d(ofGetWidth(), ofGetHeight());
-//    glTexCoord2f(10,ofGetHeight()), glVertex2d(0, ofGetHeight());
-//    glEnd();
-//    depth_image.getTextureReference().unbind();
-//    depth_image.draw(0,0,ofGetWidth(),ofGetHeight());
-    
-
-  
-    
-    
 	ofSetColor(255);
 	depth_image.draw(300, 400,depth_image.getWidth(), depth_image.getHeight());
 	ir.draw();
-//
+
 	// draw in 2D
-//	ofPushView();
-//	tracker.getOverlayCamera().begin(ofRectangle(0, 0, depth_image.getWidth(), depth_image.getHeight()));
-//	ofDrawAxis(100);
-//	tracker.draw();
-//	tracker.getOverlayCamera().end();
-//	ofPopView();
+	ofPushView();
+	tracker.getOverlayCamera().begin(ofRectangle(0, 0, depth_image.getWidth(), depth_image.getHeight()));
+	ofDrawAxis(100);
+	tracker.draw();
+	tracker.getOverlayCamera().end();
+	ofPopView();
 	
 	// draw in 3D
-    //	cam.begin();
-    //	ofDrawAxis(100);
-    //	tracker.draw();
-    //
-    //	// draw box
-    //	ofNoFill();
-    //	ofSetColor(255, 0, 0);
-    //	for (int i = 0; i < tracker.getNumUser(); i++)
-    //	{
-    //		ofxNiTE2::User::Ref user = tracker.getUser(i);
-    //		const ofxNiTE2::Joint &joint = user->getJoint(nite::JOINT_HEAD);
-    //
-    //		joint.transformGL();
-    //		ofBox(300);
-    //		joint.restoreTransformGL();
-    //	}
-    //
-    //	cam.end();
+	cam.begin();
+	ofDrawAxis(100);
+	tracker.draw();
+	
+	// draw box
+	ofNoFill();
+	ofSetColor(255, 0, 0);
     
+	for (int i = 0; i < tracker.getNumUser(); i++)
+	{
+        string status = "";
+		ofxNiTE2::User::Ref user = tracker.getUser(i);
+        nite::UserId userId = user->getId();
+        cout << userId << endl;
+        if (user->isNew()){
+            status = "new";
+        }else if(user->isVisible()){
+            status = "Visible";
+        }else if(user->isLost()){
+            status = "lost";
+        }
+        headOscSet(status, userId);
+        
+        if (user->isNew()||user->isVisible())
+        {
+            for (int j=0; j< user->getNumJoints();j++) {
+                const ofxNiTE2::Joint &joint = user->getJoint(j);
+                ofVec3f point = joint.getGlobalPosition();
+//                cout << joint.getGlobalPosition() << endl;
+                jointOscSet(point);
+                joint.transformGL();
+                ofBox(50);
+                joint.restoreTransformGL();
+            }
+        }
+        sender.sendMessage(m);
+	}	
+	cam.end();
+    
+}
+
+void::niController::headOscSet(string status,int userId){
+    m.clear();
+	m.setAddress("/comadisq/joint/");
+    m.addStringArg(status);
+    m.addInt64Arg(userId);
+}
+
+void::niController::jointOscSet(ofVec3f pos){
+    m.addFloatArg(pos.x);
+    m.addFloatArg(pos.y);
+    m.addFloatArg(pos.z);
 }
 
 //--------------------------------------------------------------

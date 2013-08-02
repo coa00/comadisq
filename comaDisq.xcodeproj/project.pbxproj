@@ -592,6 +592,20 @@
 			name = "3rd party frameworks";
 			sourceTree = "<group>";
 		};
+		C3901F6B17AC1A5300B562EC /* born */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = born;
+			sourceTree = "<group>";
+		};
+		C3901F6C17AC1B0700B562EC /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
 		C3FD928B17A69A9000B99F99 /* ni */ = {
 			isa = PBXGroup;
 			children = (
@@ -634,6 +648,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C3901F6C17AC1B0700B562EC /* lib */,
+				C3901F6B17AC1A5300B562EC /* born */,
 				C3FD928B17A69A9000B99F99 /* ni */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* comaDisq.cpp */,
