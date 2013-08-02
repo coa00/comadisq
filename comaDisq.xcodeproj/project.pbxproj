@@ -10,10 +10,6 @@
 		3b8120368b4fccd80883baf3128d1467 /* ofxAssimpAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36068d6c1d6d412786a5c4c1868cfb5e /* ofxAssimpAnimation.cpp */; };
 		40c55f69f602d3be3d8c040cc46a0d67 /* ofxNI2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38ef19efe915639d9cf24e91dd76c493 /* ofxNI2.cpp */; };
 		483fa4f6d5fa6422c559b1f561a220b1 /* ofxAssimpMeshHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = f67fe68e327befbd4b777571efda413a /* ofxAssimpMeshHelper.cpp */; };
-<<<<<<< HEAD
-		8ded5056525646fa71980866dad7cfd5 /* ofxAssimpModelLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ede55d82bd962dac0e94b708addc77b6 /* ofxAssimpModelLoader.cpp */; };
-		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
-=======
 		662EC33C17A68B75007E369D /* IpEndpointName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 662EC2F117A68B75007E369D /* IpEndpointName.cpp */; };
 		662EC33D17A68B75007E369D /* NetworkingUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 662EC2F617A68B75007E369D /* NetworkingUtils.cpp */; };
 		662EC33E17A68B75007E369D /* UdpSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 662EC2F717A68B75007E369D /* UdpSocket.cpp */; };
@@ -35,7 +31,6 @@
 		8ded5056525646fa71980866dad7cfd5 /* ofxAssimpModelLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ede55d82bd962dac0e94b708addc77b6 /* ofxAssimpModelLoader.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		C3FD928E17A69AB100B99F99 /* niController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3FD928C17A69AB100B99F99 /* niController.cpp */; };
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -83,10 +78,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */,
-<<<<<<< HEAD
-=======
 				662EC35317A68B8D007E369D /* Syphon.framework in CopyFiles */,
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +115,6 @@
 		60bbbad461d233ec2be998a924bfafde /* OniCTypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OniCTypes.h; path = ../../../addons/ofxNI2/libs/OpenNI2/include/ni2/OniCTypes.h; sourceTree = SOURCE_ROOT; };
 		6566cafa01627bc29b593c5d00230d71 /* OniPlatform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OniPlatform.h; path = ../../../addons/ofxNI2/libs/OpenNI2/include/ni2/OniPlatform.h; sourceTree = SOURCE_ROOT; };
 		65bac5a3b9c9387859a2b0e01dd0c5e7 /* pushpack1.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = pushpack1.h; path = ../../../addons/ofxAssimpModelLoader/libs/assimp/include/Compiler/pushpack1.h; sourceTree = SOURCE_ROOT; };
-<<<<<<< HEAD
-=======
 		662EC2F117A68B75007E369D /* IpEndpointName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IpEndpointName.cpp; sourceTree = "<group>"; };
 		662EC2F217A68B75007E369D /* IpEndpointName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpEndpointName.h; sourceTree = "<group>"; };
 		662EC2F317A68B75007E369D /* NetworkingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingUtils.h; sourceTree = "<group>"; };
@@ -166,7 +156,6 @@
 		662EC33417A68B75007E369D /* ofxSyphonClient.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxSyphonClient.mm; sourceTree = "<group>"; };
 		662EC33517A68B75007E369D /* ofxSyphonServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSyphonServer.h; sourceTree = "<group>"; };
 		662EC33617A68B75007E369D /* ofxSyphonServer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxSyphonServer.mm; sourceTree = "<group>"; };
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 		66b83fd2427258cc34ce748a0c7f5884 /* OniCProperties.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OniCProperties.h; path = ../../../addons/ofxNI2/libs/OpenNI2/include/ni2/OniCProperties.h; sourceTree = SOURCE_ROOT; };
 		693116443f408097fadab561dea44012 /* DepthReprojection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DepthReprojection.h; path = ../../../addons/ofxNI2/src/utils/DepthReprojection.h; sourceTree = SOURCE_ROOT; };
 		6948c3ea254b73f9a0c8dc47dcd22338 /* TimedomainMedianFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = TimedomainMedianFilter.h; path = ../../../addons/ofxNI2/src/utils/TimedomainMedianFilter.h; sourceTree = SOURCE_ROOT; };
@@ -186,11 +175,8 @@
 		99d38aa34a91a2409675bd86d51b3c58 /* DepthRemapToRange.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DepthRemapToRange.h; path = ../../../addons/ofxNI2/src/utils/DepthRemapToRange.h; sourceTree = SOURCE_ROOT; };
 		9d3fbfbcc1ee3203c85613ccf7e80431 /* DefaultLogger.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DefaultLogger.h; path = ../../../addons/ofxAssimpModelLoader/libs/assimp/include/DefaultLogger.h; sourceTree = SOURCE_ROOT; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
 		C3FD928C17A69AB100B99F99 /* niController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = niController.cpp; sourceTree = "<group>"; };
 		C3FD928D17A69AB100B99F99 /* niConroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niConroller.h; sourceTree = "<group>"; };
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
@@ -261,10 +247,7 @@
 				E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */,
 				E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */,
 				E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */,
-<<<<<<< HEAD
-=======
 				662EC34B17A68B75007E369D /* Syphon.framework in Frameworks */,
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,8 +351,6 @@
 			name = include;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-=======
 		662EC2EC17A68B75007E369D /* ofxOsc */ = {
 			isa = PBXGroup;
 			children = (
@@ -539,7 +520,6 @@
 			path = src;
 			sourceTree = "<group>";
 		};
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 		6eb1492f519cec14887d752f8739bab0 /* Win32 */ = {
 			isa = PBXGroup;
 			children = (
@@ -574,11 +554,8 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-=======
 				662EC2EC17A68B75007E369D /* ofxOsc */,
 				662EC31517A68B75007E369D /* ofxSyphon */,
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 				2c8f245acbe61e28646c17f20b185423 /* ofxAssimpModelLoader */,
 				36fd83a2982334ba894b4c24aa813d2a /* ofxNI2 */,
 			);
@@ -615,8 +592,20 @@
 			name = "3rd party frameworks";
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-=======
+		C3901F6B17AC1A5300B562EC /* born */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = born;
+			sourceTree = "<group>";
+		};
+		C3901F6C17AC1B0700B562EC /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
 		C3FD928B17A69A9000B99F99 /* ni */ = {
 			isa = PBXGroup;
 			children = (
@@ -626,7 +615,6 @@
 			name = ni;
 			sourceTree = "<group>";
 		};
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 		E4328144138ABC890047C5CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -660,10 +648,9 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-=======
+				C3901F6C17AC1B0700B562EC /* lib */,
+				C3901F6B17AC1A5300B562EC /* born */,
 				C3FD928B17A69A9000B99F99 /* ni */,
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* comaDisq.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* comaDisq.h */,
@@ -880,8 +867,6 @@
 				8ded5056525646fa71980866dad7cfd5 /* ofxAssimpModelLoader.cpp in Sources */,
 				40c55f69f602d3be3d8c040cc46a0d67 /* ofxNI2.cpp in Sources */,
 				dfa805c945270bcae6824dc1c76f6a2b /* ofxNiTE2.cpp in Sources */,
-<<<<<<< HEAD
-=======
 				662EC33C17A68B75007E369D /* IpEndpointName.cpp in Sources */,
 				662EC33D17A68B75007E369D /* NetworkingUtils.cpp in Sources */,
 				662EC33E17A68B75007E369D /* UdpSocket.cpp in Sources */,
@@ -899,7 +884,6 @@
 				662EC34D17A68B75007E369D /* ofxSyphonClient.mm in Sources */,
 				662EC34E17A68B75007E369D /* ofxSyphonServer.mm in Sources */,
 				C3FD928E17A69AB100B99F99 /* niController.cpp in Sources */,
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -936,10 +920,7 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
-<<<<<<< HEAD
-=======
 					"$(OFX_OSC_HEADERS)",
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 					../../../addons/ofxAssimpModelLoader/libs,
 					../../../addons/ofxAssimpModelLoader/libs/assimp,
 					../../../addons/ofxAssimpModelLoader/libs/assimp/include,
@@ -975,10 +956,7 @@
 					../../../addons/ofxNI2/src,
 					../../../addons/ofxNI2/src/utils,
 				);
-<<<<<<< HEAD
-=======
 				INFOPLIST_OUTPUT_FORMAT = binary;
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-lpthread",
@@ -1020,10 +998,7 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
-<<<<<<< HEAD
-=======
 					"$(OFX_OSC_HEADERS)",
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 					../../../addons/ofxAssimpModelLoader/libs,
 					../../../addons/ofxAssimpModelLoader/libs/assimp,
 					../../../addons/ofxAssimpModelLoader/libs/assimp/include,
@@ -1059,10 +1034,7 @@
 					../../../addons/ofxNI2/src,
 					../../../addons/ofxNI2/src/utils,
 				);
-<<<<<<< HEAD
-=======
 				INFOPLIST_OUTPUT_FORMAT = binary;
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-lpthread",
@@ -1088,15 +1060,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-<<<<<<< HEAD
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
-=======
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../addons/ofxSyphon/libs/Syphon/lib/osx\"";
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1182,15 +1149,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-<<<<<<< HEAD
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
-=======
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../addons/ofxSyphon/libs/Syphon/lib/osx\"";
->>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
