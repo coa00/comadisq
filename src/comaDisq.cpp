@@ -2,6 +2,7 @@
 
 //--------------------------------------------------------------
 void comaDisco::setup(){
+<<<<<<< HEAD
     ofSetFrameRate(60);
 	ofSetVerticalSync(true);
     glEnable(GL_DEPTH_TEST);
@@ -25,15 +26,29 @@ void comaDisco::setup(){
 void comaDisco::exit(){
 	tracker.exit();
 	device.exit();
+=======
+    niC = new niController();
+    niC->setup();
+}
+
+void comaDisco::exit(){
+    niC->exit();
+    delete niC;
+>>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 }
 
 //--------------------------------------------------------------
 void comaDisco::update(){
+<<<<<<< HEAD
 	device.update();
+=======
+    niC->update();
+>>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 }
 
 //--------------------------------------------------------------
 void comaDisco::draw(){
+<<<<<<< HEAD
 	// draw depth
 	depth_image.setFromPixels(tracker.getPixelsRef(1000, 4000));
 	
@@ -69,11 +84,18 @@ void comaDisco::draw(){
 //	
 //	cam.end();
 
+=======
+    niC->draw();
+>>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 }
 
 //--------------------------------------------------------------
 void comaDisco::keyPressed(int key){
+<<<<<<< HEAD
 
+=======
+    niC->keyPressed(key);
+>>>>>>> 78cdb6ace32cd8f5235ba00d6c4539ba9b3677b2
 }
 
 //--------------------------------------------------------------
