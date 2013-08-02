@@ -3,7 +3,6 @@
 #include "ofAppGlutWindow.h"
 #include "ofxNI2.h"
 #include "ofxNiTE2.h"
-#include "ofxSyphon.h"
 
 //========================================================================
 int main( ){
@@ -17,7 +16,5 @@ int main( ){
 	ofRunApp( new comaDisco());
     ofxNI2::Device device;
 	ofxNiTE2::UserTracker tracker;
-    
-    ofxSyphonServer myServer;
 
 }

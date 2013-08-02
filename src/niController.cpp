@@ -85,10 +85,26 @@ void niController::draw(){
 	cam.begin();
 	ofDrawAxis(100);
 	tracker.draw();
-	
+    
 	// draw box
 	ofNoFill();
 	ofSetColor(255, 0, 0);
+	for (int i = 0; i < tracker.getNumUser(); i++)
+	{
+		ofxNiTE2::User::Ref user = tracker.getUser(i);
+		const ofxNiTE2::Joint &joint = user->getJoint(nite::JOINT_HEAD);
+        
+        ofVec3f tmp = joint.getGlobalPosition();
+        ofTranslate(tmp);
+        cout << "joint head : " << tmp << endl;
+        
+		joint.transformGL();
+		ofBox(300);
+		joint.restoreTransformGL();
+	}
+
+	cam.end();
+
     
 	for (int i = 0; i < tracker.getNumUser(); i++)
 	{
