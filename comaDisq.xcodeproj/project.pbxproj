@@ -30,6 +30,7 @@
 		662EC35317A68B8D007E369D /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 662EC32C17A68B75007E369D /* Syphon.framework */; };
 		8ded5056525646fa71980866dad7cfd5 /* ofxAssimpModelLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ede55d82bd962dac0e94b708addc77b6 /* ofxAssimpModelLoader.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		C3E91D8917AC5CE2000C7083 /* syphonPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3E91D8717AC5CE2000C7083 /* syphonPlayer.cpp */; };
 		C3FD928E17A69AB100B99F99 /* niController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3FD928C17A69AB100B99F99 /* niController.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -175,6 +176,8 @@
 		99d38aa34a91a2409675bd86d51b3c58 /* DepthRemapToRange.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DepthRemapToRange.h; path = ../../../addons/ofxNI2/src/utils/DepthRemapToRange.h; sourceTree = SOURCE_ROOT; };
 		9d3fbfbcc1ee3203c85613ccf7e80431 /* DefaultLogger.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DefaultLogger.h; path = ../../../addons/ofxAssimpModelLoader/libs/assimp/include/DefaultLogger.h; sourceTree = SOURCE_ROOT; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
+		C3E91D8717AC5CE2000C7083 /* syphonPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = syphonPlayer.cpp; path = ../../../../../../coma/comadisq/src/syphonPlayer.cpp; sourceTree = "<group>"; };
+		C3E91D8817AC5CE2000C7083 /* syphonPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = syphonPlayer.h; path = ../../../../../../coma/comadisq/src/syphonPlayer.h; sourceTree = "<group>"; };
 		C3FD928C17A69AB100B99F99 /* niController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = niController.cpp; sourceTree = "<group>"; };
 		C3FD928D17A69AB100B99F99 /* niConroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niConroller.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -648,6 +651,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C3E91D8717AC5CE2000C7083 /* syphonPlayer.cpp */,
+				C3E91D8817AC5CE2000C7083 /* syphonPlayer.h */,
 				C3901F6C17AC1B0700B562EC /* lib */,
 				C3901F6B17AC1A5300B562EC /* born */,
 				C3FD928B17A69A9000B99F99 /* ni */,
@@ -884,6 +889,7 @@
 				662EC34D17A68B75007E369D /* ofxSyphonClient.mm in Sources */,
 				662EC34E17A68B75007E369D /* ofxSyphonServer.mm in Sources */,
 				C3FD928E17A69AB100B99F99 /* niController.cpp in Sources */,
+				C3E91D8917AC5CE2000C7083 /* syphonPlayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

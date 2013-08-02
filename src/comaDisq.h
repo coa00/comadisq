@@ -1,9 +1,6 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofxNI2.h"
-#include "ofxNiTE2.h"
-#include "OpenNI.h"
 #include "niConroller.h"
 #include "syphonPlayer.h"
 
@@ -24,11 +21,6 @@ class comaDisco : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-        ofxNI2::Device device;
-        ofxNI2::IrStream ir;
-        ofxNiTE2::UserTracker tracker;
-        ofImage depth_image;
-        ofEasyCam cam;
 
         niController *niC;
         SyphonPlayer *syphonPlayer;
