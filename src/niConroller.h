@@ -13,6 +13,7 @@
 #include "ofxNI2.h"
 #include "ofxNiTE2.h"
 #include "OpenNI.h"
+#include "ofxCv.h"
 #include "ofxSyphon.h"
 #include "ofxOsc.h"
 
@@ -46,8 +47,8 @@ public:
     vector<ofxNiTE2::User::Ref> users_arr;
     
     ofxSyphonServer myServer;
-    const string HOST = "localhost";
-    const int PORT =12000;
+    const string HOST = "127.0.0.1";
+    const int PORT =12500;
     
 };
 
